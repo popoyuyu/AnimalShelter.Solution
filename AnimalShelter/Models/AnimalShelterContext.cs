@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AnimalShelter.Models
 {
-  public class ToDoListContext : DbContext
+  public class AnimalShelterContext : DbContext
   {
-    public DbSet<Item> Items { get; set; }
+    public DbSet<Animal> Animals { get; set; }
 
-    public ToDoListContext(DbContextOptions options) : base(options) { }
+    public AnimalShelterContext(DbContextOptions options) : base(options) { }
   }
 }
