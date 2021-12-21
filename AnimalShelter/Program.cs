@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ProjectName
+namespace AnimalShelter
 {
   public class Program
   {
@@ -13,7 +13,7 @@ namespace ProjectName
         .UseIISIntegration()
         .UseStartup<Startup>()
         .Build();
-      
+
       host.Run();
     }
   }
